@@ -205,7 +205,7 @@ const Home = () => {
     };
 
     fetchAllTransactions();
-  }, [refresh, frequency, endDate, type, startDate, cUser]);
+  }, [refresh, frequency, endDate, type, startDate, cUser?._id]);
 
   const handleTableClick = (e) => {
     setView("table");
